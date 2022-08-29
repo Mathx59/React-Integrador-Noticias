@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { PostContext } from "../../context/PostContext";
 import { Link } from "react-router-dom";
 import { Footer } from "../Footer";
+import { Markup } from "interweave";
 
 export const SearchResult = () => {
   const { result } = useContext(PostContext);
@@ -16,7 +17,7 @@ export const SearchResult = () => {
       <div className="bg-orange-100  pb-5">
         {foundPost == 0 ? (
           <div className="h-screen pt-20">
-            <div className="alert alert-warning shadow-lg max-w-[50%] mx-auto">
+            <div className="alert alert-warning shadow-lg md:max-w-[50%] justify-center mx-auto">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,11 +40,13 @@ export const SearchResult = () => {
           </div>
         ) : (
           foundPost.map((post) => {
+            let cuerpoHtml = post.cuerpo;
+            let cuerpoString = cuerpoHtml.replace(/<[^>]+>/g, "<p>");
             return (
               <div className="grid grid-cols-1 gap-20 mt-20 pt-20 justify-items-center container mx-auto ">
                 <div
                   key={post.id}
-                  className="card card-side bg-base-100 shadow-xl max-w-[50%]"
+                  className="card md:card-side mx-4 sm:mx-0 bg-base-100 shadow-xl md:max-w-[50%]"
                 >
                   <figure>
                     <img className="w-96" src={post.imagen} alt="Titulo" />
@@ -51,7 +54,7 @@ export const SearchResult = () => {
                   <div className="card-body">
                     <h2 className="card-title">{post.titulo}</h2>
                     <p className="line-clamp-1 text-sm max-w-prose ...">
-                      {post.cuerpo}
+                      <Markup content={cuerpoString} />
                     </p>
                     <div className="card-actions justify-end">
                       <Link to={`/post/${post.id}`}>
