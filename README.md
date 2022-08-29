@@ -1,1 +1,1 @@
-Proyecto integrador para NUCBA, versión en React.js de Cryptonita News con Tailwind CSS
+## Proyecto Final para NUCBA, versión en React JS de Cryptonita News con Tailwind CSS
