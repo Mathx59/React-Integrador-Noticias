@@ -91,8 +91,6 @@ export const NavBar = () => {
           lcw-marquee-items="10"
         ></div>
       </div>
-
-      {/*  </SearchContext.Provider> */}
     </>
   );
 };
