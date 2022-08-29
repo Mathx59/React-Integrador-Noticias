@@ -46,7 +46,7 @@ export const ListPost = ({ postState, remove, ReadPost }) => {
           </button>
         </div>
       )}
-      <div className="overflow-x-auto mx-auto w-2/3">
+      <div className="overflow-x-auto mx-auto md:w-2/3">
         <table className="table w-full">
           <thead>
             <tr>

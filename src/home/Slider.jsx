@@ -25,7 +25,7 @@ export const Slider = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="w-2/3 h-80 pt-5 mb-12 mySwiper "
+        className="mx-3 sm:mx-auto md:w-2/3 h-80 pt-5 mb-12 mySwiper"
       >
         {postState.map((post) => {
           if (post.slider === true) {

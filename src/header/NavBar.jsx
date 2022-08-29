@@ -34,10 +34,10 @@ export const NavBar = () => {
     <>
       <div
         data-theme="dracula"
-        className="navbar  bg-base-100 flex justify-evenly sticky top-0 z-30"
+        className="navbar  bg-base-100 flex justify-evenly sticky top-0 z-30 "
       >
         <div className="">
-          <NavLink to="/" className="btn btn-ghost normal-case text-xl">
+          <NavLink to="/" className="btn btn-ghost normal-case text-xl ">
             <IoFlash />
           </NavLink>
         </div>
@@ -75,8 +75,8 @@ export const NavBar = () => {
               </ul>
             </div>
           ) : (
-            <NavLink to="/dashboard" className="justify-between">
-              <button className="btn glass ">ingresar</button>
+            <NavLink to="/dashboard" className="justify-between pr-4">
+              <button className="btn glass btn-sm  md:btn-md">ingresar</button>
             </NavLink>
           )}
         </div>

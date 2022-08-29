@@ -38,7 +38,7 @@ export const FormPost = ({ addPost }) => {
         <SubmitPost showBadge={showBadge} setShowBadge={setShowBadge} />
         <div className="px-4 py-12 mx-auto max-w-7xl">
           <div className="w-full px-0 pt-5 pb-6 mx-auto mt-4 mb-0 space-y-4 bg-transparent border-0 border-gray-200 rounded-lg md:bg-white md:border sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-8/12 md:px-6 sm:mt-8 sm:mb-5">
-            <h1 className="mb-5 text-xl font-light text-left text-gray-800 sm:text-center">
+            <h1 className="mb-5 text-xl font-light text-left text-gray-800 text-center">
               Agregar nuevo artículo
             </h1>
             <form
@@ -98,7 +98,7 @@ export const FormPost = ({ addPost }) => {
                 <option>Tecnología</option>
                 <option>Opinión</option>
               </select>
-              <h2 className="mb-5 pt-12 text-xl font-light text-left text-gray-800 sm:text-center">
+              <h2 className="mb-5 pt-12 text-xl font-light text-left text-gray-800 text-center">
                 Contenido
               </h2>
               <RichTextEditor

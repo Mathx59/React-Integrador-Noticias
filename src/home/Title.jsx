@@ -2,7 +2,7 @@ export const Title = () => {
   return (
     <>
       <section>
-        <div class="px-4 py-1 mx-auto max-w-7xl sm:px-6 md:px-8 lg:px-12 lg:py-14">
+        <div class="px-4 py-1 mx-auto max-w-7xl pt-9 sm:px-6 md:px-8 lg:px-12 lg:py-14">
           <div class="flex flex-col w-full mb-4 text-center">
             <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
               Cryptonita News
