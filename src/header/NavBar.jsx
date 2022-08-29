@@ -36,13 +36,13 @@ export const NavBar = () => {
         data-theme="dracula"
         className="navbar  bg-base-100 flex justify-evenly sticky top-0 z-30 "
       >
-        <div className="">
+        <div>
           <NavLink to="/" className="btn btn-ghost normal-case text-xl ">
             <IoFlash />
           </NavLink>
         </div>
         <div></div>
-        <div className="  gap-2">
+        <div className="gap-2">
           <div className="form-control">
             <input
               onChange={Results}
